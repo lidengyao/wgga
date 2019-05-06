@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLL">
+    <!--头部-->
+    <RelativeLayout
+        android:id="@+id/homeTopLL"
+        style="@style/TopBarStyle">
+
+        <LinearLayout
+            style="@style/TopBarLeftStyle"
+            android:visibility="gone">
+
+            <ImageView style="@style/TopBarBackImageStyle" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/TopBarTitleStyle"
+            android:text="上传图片" />
+
+        <RelativeLayout
+            style="@style/TopBarRightStyle"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/TopBarRightTextStyle"
+                android:text="修改" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/IVDemo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <Button
+        android:id="@+id/BtnChooseImage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="选择图片" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="fragment_top_bar" type="id" />
+    <item name="activity_top_bar" type="id" />
+    <item name="glide_tag_id" type="id" />
+    <item name="btn_back" type="id" />
+    <item name="drag_handle" type="id" />
+</resources>

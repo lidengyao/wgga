@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLL">
+    <!--头部-->
+    <RelativeLayout style="@style/TopBarStyle">
+
+        <LinearLayout
+            style="@style/TopBarLeftStyle"
+            android:visibility="visible">
+
+            <ImageView style="@style/TopBarBackImageStyle" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/JianCeTitle"
+            style="@style/TopBarTitleStyle"
+            android:text="账号与安全" />
+
+        <RelativeLayout
+            style="@style/TopBarRightStyle"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/tianjia" />
+
+            <TextView
+                style="@style/TopBarRightTextStyle"
+                android:text="修改"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/ChangePwdRL"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@mipmap/woitembg">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="修改密码"
+                android:textColor="@color/color4"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
+            android:src="@mipmap/jiantou" />
+    </RelativeLayout>
+</LinearLayout>

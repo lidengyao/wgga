@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLL">
+
+    <!--头部-->
+    <RelativeLayout
+        android:id="@+id/homeTopLL"
+        style="@style/TopBarStyle">
+
+        <LinearLayout
+            style="@style/TopBarLeftStyle"
+            android:visibility="gone">
+
+            <ImageView style="@style/TopBarBackImageStyle" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/TopBarTitleStyle"
+            android:text="菜单" />
+
+        <RelativeLayout
+            style="@style/TopBarRightStyle"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/TopBarRightTextStyle"
+                android:text="修改" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/scrollViewList"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/BtnGetWebDataEndQuery"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="请求网络数据(尾部参数)" />
+
+            <Button
+                android:id="@+id/BtnGetWebDataBody"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:text="请求网络数据(Body参数)"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/BtnLoadMoreData"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:text="加载更多数据ListView"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/BtnUpLoadFile"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:text="上传文件（图片）" />
+
+            <Button
+                android:id="@+id/BtnBanner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:text="Banner无限循环"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/BtnLayoutRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:text="Layout下拉刷新"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/BtnBottomMenu"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:text="底部菜单"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/BtnMoreHeagImage"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:text="各种头像"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/BtnListViewItemSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:text="ListView的Item拖拉换位置"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/BtnTabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:text="TabLayout使用方法"
+                android:textAllCaps="false" />
+            <EditText
+                android:id="@+id/JPush"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

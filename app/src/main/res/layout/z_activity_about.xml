@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLL"
+    android:background="@color/color2">
+    <!--头部-->
+    <RelativeLayout
+        android:id="@+id/homeTopLL"
+        style="@style/TopBarStyle">
+
+        <LinearLayout
+            style="@style/TopBarLeftStyle"
+            android:visibility="visible">
+
+            <ImageView style="@style/TopBarBackImageStyle" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/TopBarTitleStyle"
+            android:text="关于我们" />
+
+        <RelativeLayout
+            style="@style/TopBarRightStyle"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/TopBarRightTextStyle"
+                android:text="修改" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@color/color2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:src="@mipmap/erweima" />
+
+                    <TextView
+                        android:id="@+id/VersionNameTV"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="当前版本：1.0"
+                        android:textColor="@color/color24"
+                        android:textSize="@dimen/textsize16" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="公司简介"
+                    android:textSize="@dimen/textsize18"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:lineSpacingExtra="5dp"
+                    android:text="南京莱斯信息技术股份有限公司（“莱斯信息”）是中国电子科技集团公司（国务院国资委监管的中央企业）旗下的高科技骨干企业之一。公司定位于国内一流的信息系统集成商和服务商，已构建起民航空管、智能交通、应急指挥、软件与信息服务四大业务板块。公司员工中大专以上学历的占96%，1/3以上拥有中高级技术职称。
+
+莱斯信息始建于1988年7月16日，2004年改制成立南京莱斯大型电子系统工程有限公司，2009年股份制改革后变更为南京莱斯信息技术股份有限公司。2013年，公司整体搬迁至南京白下高新技术产业园区。
+
+莱斯信息自成立以来，逐步形成了完整的顶层设计、系统集成、软件研发、设备制造和运营服务能力，质量保证体系完备，拥有各类资质40余项，荣获国家科技进步奖2项、省部级科技进步奖7项，先后承担了多个国家重点科技攻关项目、“863”计划和火炬计划项目，是国家火炬计划重点高新技术企业，被评为江苏省首批创新型试点企业。2013年，公司荣获“江苏省企业技术创新奖”称号。
+
+莱斯信息秉持“提供信息化产品、服务数字化社会”的使命，积极履行社会责任，承担了多项重大活动保障任务。在北京奥运会、建国60周年庆典、上海世博会、广州亚运会等国家级活动的安保工作中，公司研制的产品发挥了重要作用；汶川地震、芦山地震发生后，公司在应急指挥、卫星通讯、气象监测等方面提供了全方位的技术保障，为夺取抗震救灾的胜利作出了直接贡献。
+
+随着大数据时代的到来和“两化融合”的不断深化，公司确立了“发展四大核心业务、培育四大新兴业务、提升五大核心能力、构筑五大支撑体系、建成国内一流的系统集成商和服务商”的“四四五五一”发展战略。未来，公司将立足自我、兼收并蓄，致力于为广大客户提供先进的信息化产品、应用解决方案和服务，以过硬的产品和专业的服务推动数字化社会建设！" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

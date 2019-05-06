@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+    <Item Hint="" IsNull="Yes" Key="name" Title="单位名称" ViewType="Normal"></Item>
+    <Item Hint="" IsNull="Yes" Key="certificateNumber" Title="行政区域" ViewType="Normal"></Item>
+    <Item Hint="" IsNull="Yes" Key="certificateNumber" Title="备案状态" TypeKey="1"
+        ViewType="ArrayList"></Item>
+    <Item Hint="" IsNull="Yes" Key="certificateNumber" Title="注销状态" TypeKey="1"
+        ViewType="ArrayList"></Item>
+    <Item Hint="" IsNull="Yes" Key="certificateNumber" Title="锁定状态" TypeKey="1"
+        ViewType="ArrayList"></Item>
+    <Item Hint="" IsNull="Yes" Key="certificateNumber" Title="系统外标记" TypeKey="1"
+        ViewType="ArrayList"></Item>
+    <Item Hint="" IsNull="Yes" Key="certificateNumber" Title="按注册类型" TypeKey="1"
+        ViewType="ArrayList"></Item>
+    <Item Hint="" IsNull="Yes" Key="certificateNumber" Title="按备案类型" TypeKey="1"
+        ViewType="ArrayList"></Item>
+    <Item Hint="" IsNull="Yes" Key="resume" Title="按物品类型" TypeKey="9"
+        ViewType="CheckBoxList"></Item>
+    <Item Hint="" IsNull="Yes" Key="certificateNumber" Title="按使用单位类型" TypeKey="1"
+        ViewType="ArrayList"></Item>
+    <Item Hint="" IsNull="Yes" Key="certificateNumber" Title="风险等级" TypeKey="1"
+        ViewType="ArrayList"></Item>
+    <Item Hint="" IsNull="Yes" Key="name" Title="备案物品" ViewType="Normal"></Item>
+    <Item Hint="" IsNull="Yes" Key="certificateNumber" Title="直管单位" TypeKey="1"
+        ViewType="ArrayList"></Item>
+    <Item Hint="" IsNull="Yes" Key="name" Title="曾用单位名称" ViewType="Normal"></Item>
+
+</Root>

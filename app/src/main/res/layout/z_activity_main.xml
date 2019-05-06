@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLL">
+
+
+
+
+    <com.bcxd.wgga.widget.NoScrollViewPager
+        android:id="@+id/jiankongContentFL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ShouYeBottomLL"
+   />
+    <!--底部-->
+    <LinearLayout
+        android:id="@+id/ShouYeBottomLL"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color2"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/color10"></View>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ShouYeLL"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ShouYeIV"
+                    android:layout_width="34dp"
+                    android:layout_height="23dp"
+                    android:src="@mipmap/jiankongicon" />
+
+                <TextView
+                    android:id="@+id/ShouYeTV"
+                    style="@style/HomeBottomTextStyle"
+                    android:text="监控" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/huanjingjianceLL"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/huanjingjianceIV"
+                    android:layout_width="34dp"
+                    android:layout_height="23dp"
+                    android:src="@mipmap/huanjingiconhui" />
+
+                <TextView
+                    android:id="@+id/huanjingjianceTV"
+                    style="@style/HomeBottomTextStyle"
+                    android:text="环境检测" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/jianchaLL"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/jianchaIV"
+                    android:layout_width="34dp"
+                    android:layout_height="23dp"
+                    android:src="@mipmap/jianchaiconhui" />
+
+                <TextView
+                    android:id="@+id/jianchaTV"
+                    style="@style/HomeBottomTextStyle"
+                    android:text="检查" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/xiaoxiLL"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/xiaoxiIV"
+                    android:layout_width="34dp"
+                    android:layout_height="23dp"
+                    android:src="@mipmap/xiaoxiiconhui" />
+
+                <TextView
+
+                    android:id="@+id/xiaoxiTV"
+                    style="@style/HomeBottomTextStyle"
+                    android:text="消息" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/woLL"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/woIV"
+                    android:layout_width="34dp"
+                    android:layout_height="23dp"
+                    android:src="@mipmap/woiconhui" />
+
+                <TextView
+
+                    android:id="@+id/woTV"
+                    style="@style/HomeBottomTextStyle"
+                    android:text="我" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

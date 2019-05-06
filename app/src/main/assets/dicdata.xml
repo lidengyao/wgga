@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+    <Item DicKey="1" ID="1" Name="性别" Value="男"></Item>
+    <Item DicKey="1" ID="2" Name="性别" Value="女"></Item>
+
+    <Item DicKey="2" ID="3" Name="民族" Value="汉族"></Item>
+    <Item DicKey="2" ID="4" Name="民族" Value="满族"></Item>
+    <Item DicKey="2" ID="5" Name="民族" Value="维吾尔族"></Item>
+
+    <Item DicKey="3" ID="6" Name="岗位类型" Value="管理人员"></Item>
+    <Item DicKey="3" ID="7" Name="岗位类型" Value="操作员"></Item>
+    <Item DicKey="3" ID="8" Name="岗位类型" Value="保管员"></Item>
+    <Item DicKey="3" ID="9" Name="岗位类型" Value="治安保卫员"></Item>
+    <Item DicKey="3" ID="10" Name="岗位类型" Value="采购员"></Item>
+    <Item DicKey="3" ID="11" Name="岗位类型" Value="其他人员"></Item>
+
+    <Item DicKey="4" ID="12" Name="政治面貌" Value="党员"></Item>
+    <Item DicKey="4" ID="13" Name="政治面貌" Value="团员"></Item>
+
+    <Item DicKey="5" ID="14" Name="备案状态" Value="未办结"></Item>
+    <Item DicKey="5" ID="15" Name="备案状态" Value="已办结"></Item>
+
+    <Item DicKey="6" ID="16" Name="注销状态" Value="未注销"></Item>
+    <Item DicKey="6" ID="17" Name="注销状态" Value="已注销"></Item>
+
+
+    <Item DicKey="7" ID="18" Name="五类人员库对比" Value="未必对"></Item>
+    <Item DicKey="7" ID="19" Name="五类人员库对比" Value="无犯罪记录"></Item>
+    <Item DicKey="7" ID="20" Name="五类人员库对比" Value="有犯罪记录"></Item>
+
+    <Item DicKey="8" ID="21" Name="直管单位" Value="全部（包含直管单位）"></Item>
+    <Item DicKey="8" ID="22" Name="直管单位" Value="仅直管单位"></Item>
+
+    <Item DicKey="9" ID="23" Name="物品类型" Value="储存"></Item>
+    <Item DicKey="9" ID="24" Name="物品类型" Value="处置"></Item>
+    <Item DicKey="9" ID="25" Name="物品类型" Value="生产"></Item>
+    <Item DicKey="9" ID="26" Name="物品类型" Value="使用"></Item>
+    <Item DicKey="9" ID="27" Name="物品类型" Value="销售"></Item>
+    <Item DicKey="9" ID="28" Name="物品类型" Value="运输"></Item>
+</Root>

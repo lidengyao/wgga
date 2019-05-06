@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLL">
+
+    <!--头部-->
+    <RelativeLayout
+        android:id="@+id/dapengTopLL"
+        style="@style/TopBarStyle">
+
+        <LinearLayout style="@style/TopBarLeftStyle" android:visibility="gone">
+
+            <ImageView style="@style/TopBarBackImageStyle" />
+        </LinearLayout>
+
+        <TextView
+            android:text="底部菜单"
+            android:id="@+id/dapengTitleTV"
+            style="@style/TopBarTitleStyle"/>
+
+        <RelativeLayout
+            android:id="@+id/xiugaiRL"
+            style="@style/TopBarRightStyle"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/TopBarRightTextStyle"
+                android:text="修改" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/dapengContentFL"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/dapengBottomLL"
+        android:layout_below="@+id/dapengTopLL"
+        android:layout_weight="1.0" />
+    <!--底部-->
+    <LinearLayout
+        android:id="@+id/dapengBottomLL"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color2"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/color10"></View>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ShiShiShuJuLL"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/shishishujuIV"
+                    android:layout_width="34dp"
+                    android:layout_height="23dp"
+                    android:src="@mipmap/ldy_shishishuju" />
+
+                <TextView
+                    android:id="@+id/shishishujuTV"
+                    style="@style/HomeBottomTextStyle"
+                    android:text="实时数据" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/SheBeiKongZhiLL"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/shebeikongzhiIV"
+                    android:layout_width="34dp"
+                    android:layout_height="23dp"
+                    android:src="@mipmap/ldy_shebeikongzhi" />
+
+                <TextView
+                    android:id="@+id/shebeikongzhiTV"
+                    style="@style/HomeBottomTextStyle"
+                    android:text="设备控制" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LiShiQuXianLL"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/lishiquxianIV"
+                    android:layout_width="34dp"
+                    android:layout_height="23dp"
+                    android:src="@mipmap/ldy_lishiquxian" />
+
+                <TextView
+                    android:id="@+id/lishiquxianTV"
+                    style="@style/HomeBottomTextStyle"
+                    android:text="历史曲线" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/SheShiXinXiLL"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/sheshixinxiIV"
+                    android:layout_width="34dp"
+                    android:layout_height="23dp"
+                    android:src="@mipmap/ldy_sheshixinxi" />
+
+                <TextView
+
+                    android:id="@+id/sheshixinxiTV"
+                    style="@style/HomeBottomTextStyle"
+                    android:text="设施信息" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

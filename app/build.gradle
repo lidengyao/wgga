@@ -1,0 +1,122 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        release {
+            keyAlias 'tigkey.keystore'
+            keyPassword 'tignn2015'
+            storeFile file('tigkey.keystore')
+            storePassword 'tignn2015'
+        }
+        debug {
+            keyAlias 'tigkey.keystore'
+            keyPassword 'tignn2015'
+            storeFile file('tigkey.keystore')
+            storePassword 'tignn2015'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+    compileSdkVersion 28
+    buildToolsVersion '28.0.2'
+    defaultConfig {
+        applicationId "com.bcxd.wgga"
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0.1"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            // 不显示Log, 在java代码中的调用方式为：BuildConfig.LOG_DEBUG
+            buildConfigField "boolean", "LEO_DEBUG", "false"
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            // 显示Log
+            buildConfigField "boolean", "LEO_DEBUG", "true"
+            versionNameSuffix "-debug"
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.debug
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+}
+allprojects {
+    repositories {
+        jcenter()
+        mavenCentral();
+        maven {
+            url 'https://oss.sonatype.org/content/repositories/releases'
+        }
+        maven {
+            url 'https://oss.sonatype.org/content/repositories/snapshots'
+        }
+        maven { url "https://jitpack.io" }
+    }
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    implementation files('libs/universal-image-loader-1.9.2-SNAPSHOT-with-sources.jar')
+    implementation files('libs/ormlite-android-4.49-SNAPSHOT.jar')
+    implementation files('libs/ormlite-core-4.49-SNAPSHOT.jar')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    //    compile 'com.github.bumptech.glide:glide:3.6.1'
+    //    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //    compile 'com.github.LuckSiege.PictureSelector:picture_library:v2.1.9'
+    //图片加载
+    implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    // 控制状态栏
+    implementation 'com.jakewharton:butterknife:7.0.1'
+    annotationProcessor 'com.jakewharton:butterknife:7.0.1'
+    // VIEW控件注入
+    implementation 'com.github.orhanobut:logger:1.12'
+    //日志
+    implementation 'cat.ereza:customactivityoncrash:1.5.0'
+    //捕捉异常
+    implementation 'io.reactivex:rxandroid:1.1.0'
+    implementation 'io.reactivex:rxjava:1.1.0'
+    implementation 'com.jakewharton.rxbinding:rxbinding:0.3.0'
+    // 控件rx
+    implementation 'com.squareup.retrofit2:retrofit:2.0.0-beta4'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.0.0-beta4'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.1.2'
+    implementation 'com.lsjwzh:materialloadingprogressbar:0.5.8-RELEASE'
+    // progress
+    implementation 'com.android.support:support-v4:28.0.0'
+    // progress
+    implementation 'in.srain.cube:ultra-ptr:1.0.11'
+    //高德2D地图
+    implementation 'com.amap.api:map2d:latest.integration'
+    //高德定位
+    implementation 'com.amap.api:location:latest.integration'
+    implementation files('libs/jcore-android-1.2.7.jar')
+    implementation files('libs/jpush-android-3.2.0.jar')
+    implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.3'
+    //quanxian
+    implementation 'com.yanzhenjie.alertdialog:alertdialog:1.0.1'
+    implementation 'com.yanzhenjie:permission:2.0.0-rc4'
+
+    //设备列表页面图片自动缩放
+    implementation project(':phototagginglibrary')
+    implementation files('libs/AndroidScreenCap.jar')
+}

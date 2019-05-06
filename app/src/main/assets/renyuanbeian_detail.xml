@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+    <Item Hint="请输入姓名" IsNull="No" Key="name" Title="姓名" ViewType="Normal"></Item>
+    <Item Hint="请输入别名" IsNull="Yes" Key="aliasName" Title="别名" ViewType="Normal"></Item>
+    <Item Hint="请选择性别" IsNull="Yes" Key="gender" Title="性别" TypeKey="1" ViewType="ArrayList"></Item>
+    <Item Hint="请选择出生年月" IsNull="Yes" Key="birthday" Title="出生年月" ViewType="Date"></Item>
+    <Item Hint="请输入证件号码" IsNull="No" Key="certificateNumber" Title="证件号码" ViewType="Normal"></Item>
+    <Item Hint="请选择从业时间" IsNull="Yes" Key="workBeginTime" Title="从业时间" ViewType="Date"></Item>
+    <Item Hint="请选择民族" IsNull="No" Key="raceType" Title="民族" TypeKey="2"
+        ViewType="ArrayList"></Item>
+    <Item Hint="请输入籍贯" IsNull="No" Key="nativePlace" Title="籍贯" ViewType="Normal"></Item>
+    <Item Hint="请输入户籍地址" IsNull="No" Key="householdAddress" Title="户籍地址" ViewType="Normal"></Item>
+    <Item Hint="请输入现在住址" IsNull="No" Key="liveAddress" Title="现在住址" ViewType="Normal"></Item>
+    <Item Hint="请输入文化程度" IsNull="No" Key="culturalValue" Title="文化程度" ViewType="Normal"></Item>
+    <Item Hint="请选择政治面貌" IsNull="No" Key="political" Title="政治面貌" TypeKey="3"
+        ViewType="ArrayList"></Item>
+    <Item Hint="请输入现任职务" IsNull="No" Key="nowDuty" Title="现任职务" ViewType="Normal"></Item>
+    <Item Hint="请输入联系电话" IsNull="No" Key="tel" Title="联系电话" ViewType="Normal"></Item>
+    <Item Hint="请选择岗位类型" IsNull="No" Key="dutyType" Title="岗位类型" TypeKey="4"
+        ViewType="ArrayList"></Item>
+    <Item Hint="请输入资格证书名称" IsNull="Yes" Key="qualificationName" Title="资格证书名称"
+        ViewType="Normal"></Item>
+    <Item Hint="请输入资格证书编号" IsNull="Yes" Key="qualificationNumber" Title="资格证书编号"
+        ViewType="Normal"></Item>
+    <Item Hint="请输入资格证书颁发机构" IsNull="Yes" Key="qualificationIssuing" Title="资格证书颁发机构"
+        ViewType="Normal"></Item>
+    <Item Hint="请选择证书有效期" IsNull="Yes" Key="qualificationEndTime" Title="证书有效期"
+        ViewType="Date"></Item>
+    <Item Hint="请输入与重点人员库比对结果" IsNull="Yes" Key="comparisonResult" Title="与重点人员库比对结果"
+        ViewType="Normal"></Item>
+    <Item Hint="请输入简历" IsNull="Yes" Key="resume" Title="简历" ViewType="Lines"></Item>
+
+</Root>

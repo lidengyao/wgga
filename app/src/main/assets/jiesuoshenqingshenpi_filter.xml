@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+    <Item Hint="请输入被锁定单位" IsNull="Yes" Key="name" Title="被锁定单位" ViewType="Normal"></Item>
+    <Item Hint="请输入锁定单位" IsNull="Yes" Key="certificateNumber" Title="锁定单位" ViewType="Normal"></Item>
+
+    <Item BeginDateKey="BeginDateKey" EndDateKey="EndDateKey" Hint="请输入行政区域" IsNull="Yes"
+        Key="xingzhengquyu" Title="申请解锁时间" ViewType="BetweenDate"></Item>
+
+</Root>

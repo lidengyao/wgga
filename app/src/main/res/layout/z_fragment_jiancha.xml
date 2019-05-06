@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color22"
+    android:orientation="vertical">
+    <!--头部-->
+    <RelativeLayout style="@style/TopBarStyle">
+
+        <LinearLayout
+            style="@style/TopBarLeftStyle"
+            android:visibility="gone">
+
+            <ImageView style="@style/TopBarBackImageStyle" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/TopBarTitleStyle"
+            android:text="检查" />
+
+        <RelativeLayout
+            android:id="@+id/JianChaRL"
+            style="@style/TopBarRightStyle">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/tianjia" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/TypeRL"
+        android:layout_width="290dp"
+        android:layout_height="36dp"
+        android:background="@drawable/ldy_cornersitemclickstyle"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/wentiNextIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/xiala" />
+
+        <TextView
+            android:id="@+id/TypeTV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/wentiNextIV"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:text="全部问题" />
+
+    </RelativeLayout>
+
+
+    <com.bcxd.wgga.widget.PullLoadMoreListView
+        android:id="@+id/JianChaListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:divider="@null" />
+</LinearLayout>

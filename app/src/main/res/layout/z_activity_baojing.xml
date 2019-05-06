@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLL">
+    <!--头部-->
+    <RelativeLayout style="@style/TopBarStyle">
+
+        <LinearLayout
+            style="@style/TopBarLeftStyle"
+            android:visibility="visible">
+
+            <ImageView style="@style/TopBarBackImageStyle" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/XmTitleTV"
+            style="@style/TopBarTitleStyle"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="" />
+        <RelativeLayout
+            style="@style/TopBarRightStyle"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/tianjia" />
+
+            <TextView
+                style="@style/TopBarRightTextStyle"
+                android:text="修改"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/HaveDataLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color22">
+
+        <com.bcxd.wgga.widget.PullLoadMoreListView
+            android:id="@+id/BaojingListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:divider="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/NoDataLL"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂无报警数据" />
+    </LinearLayout>
+</LinearLayout>

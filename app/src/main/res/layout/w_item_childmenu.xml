@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+
+    <LinearLayout
+        android:id="@+id/RootOneLL"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/OneLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageOne"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/daibanshixiang" />
+
+            <com.bcxd.wgga.widget.CenterTextView
+                android:id="@+id/nameOne"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="代表事项代表"
+                android:textColor="@color/menutxtColor"
+                android:textSize="@dimen/textsize13" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/RootTwoLL"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/TwoLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageTwo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/daibanshixiang" />
+
+            <com.bcxd.wgga.widget.CenterTextView
+                android:id="@+id/nameTwo"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="代表事项"
+                android:textColor="@color/menutxtColor"
+                android:textSize="@dimen/textsize13" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/RootThreeLL"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ThreeLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageThree"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/daibanshixiang" />
+
+            <com.bcxd.wgga.widget.CenterTextView
+                android:id="@+id/nameThree"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="代表事项"
+                android:textColor="@color/menutxtColor"
+                android:textSize="@dimen/textsize13" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/RootFourLL"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/FourLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageFour"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/daibanshixiang" />
+
+            <com.bcxd.wgga.widget.CenterTextView
+                android:id="@+id/nameFour"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="代表事项"
+                android:textColor="@color/menutxtColor"
+                android:textSize="@dimen/textsize13" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <WebView
+        android:id="@+id/JianKongWV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"></WebView>
+
+
+    <TextureView
+        android:id="@+id/JianKongTV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/bianju"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="35dp">
+
+            <LinearLayout
+                android:id="@+id/PaiZhaoLL"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/paizhao" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/KongzhiIV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/kongzhidi"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/TopLL"
+                    android:layout_width="48dp"
+                    android:layout_height="38dp"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="vertical"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LeftLL"
+                    android:layout_width="38dp"
+                    android:layout_height="48dp"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/RightLL"
+                    android:layout_width="38dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/BottomLL"
+                    android:layout_width="48dp"
+                    android:layout_height="38dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="vertical"></LinearLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/KongZhiBtn"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="控制"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/NOVedio"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/logo"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/backIV"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/backicon" />
+    </RelativeLayout>
+</RelativeLayout>

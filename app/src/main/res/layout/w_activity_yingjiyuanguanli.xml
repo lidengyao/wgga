@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerlayout"
+    style="@style/PageRootLL">
+
+    <LinearLayout
+        android:id="@+id/fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/status_shape">
+
+            <LinearLayout style="@style/TopStyle">
+
+                <RelativeLayout style="@style/TopBarStyle">
+
+                    <LinearLayout
+                        style="@style/TopBarLeftStyle"
+                        android:visibility="visible">
+
+                        <ImageView
+                            style="@style/TopBarBackImageStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/SysNameIV"
+                        style="@style/TopBarTitleStyle"
+                        android:text="应急预案管理" />
+
+                    <RelativeLayout
+                        android:id="@+id/AddRL"
+                        style="@style/TopBarRightStyle"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginRight="20dp"
+                            android:src="@mipmap/addicon" />
+
+                        <TextView
+                            style="@style/TopBarRightTextStyle"
+                            android:text="修改"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/whitebg_shape"
+            android:gravity="center_vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/SerchTV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:hint="点击进行条件查询操作"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <com.bcxd.wgga.widget.PullLoadMoreListView
+            android:id="@+id/DataListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:divider="@null" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_marginTop="22dp"
+        android:background="#BCEE68">
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ChongZhiOKLL"
+                style="@style/FilterBottomStyle">
+
+                <LinearLayout style="@style/ChongZhiStyle">
+
+                    <TextView
+                     style="@style/ChongZhiTxtStyle"
+                        android:text="@string/chongzhi" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/FilterOkStyle">
+
+                    <TextView
+                     style="@style/FilterOkTxtStyle"
+                        android:text="@string/queding" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/ChongZhiOKLL"
+
+                android:background="@color/color2">
+
+                <LinearLayout
+                    android:id="@+id/FilterLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ChildLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp">
+
+                <LinearLayout
+                    style="@style/DicLeftStyle"
+                    android:visibility="visible">
+
+                    <ImageView style="@style/BlackBackImageStyle" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/LineStyle"></View>
+
+            <com.bcxd.wgga.widget.PullLoadMoreListView
+                android:id="@+id/DicListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

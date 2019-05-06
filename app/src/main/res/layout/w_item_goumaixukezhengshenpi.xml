@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/pagebgcolor"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ldy_cornersitemclickstyle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/RightJianTou"
+                style="@style/ItemRightJianTouStyle" />
+
+            <LinearLayout
+                android:id="@+id/RootLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_toLeftOf="@+id/RightJianTou"
+                android:background="@color/color2"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        style="@style/TitleStyle"
+                        android:text="申请单位" />
+
+                    <TextView
+                        style="@style/ValueStyle"
+                        android:text="" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        style="@style/TitleStyle"
+                        android:text="销售单位" />
+
+                    <TextView
+                        android:id="@+id/companyValueTV"
+                        style="@style/ValueStyle"
+                        android:text="" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            style="@style/TitleStyle"
+                            android:text="办理人	" />
+
+                        <TextView
+                            android:id="@+id/nameTV"
+                            style="@style/ValueStyle"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/TitleStyle"
+                            android:text="类型" />
+
+                        <TextView
+                            android:id="@+id/certificateNumberTV"
+                            style="@style/ValueStyle"
+                            android:text="" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/TitleStyle"
+                            android:text="申请日期	" />
+
+                        <TextView
+                            android:id="@+id/culturalValueTV"
+                            style="@style/ValueStyle"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/TitleStyle"
+                            android:text="状态" />
+
+                        <TextView
+                            android:id="@+id/genderValueTV"
+                            style="@style/ValueStyle"
+                            android:text="" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+    <Item DictionaryKey="" Hint="请输入被锁定单位" Key="LockCompanyID"
+        TextColor="Orange" Title="被锁定单位"  ViewType="Normal"></Item>
+
+    <Item DictionaryKey="" Hint="请输入锁定时间" Key="LockTime"  TextColor="Orange"
+        Title="锁定时间" Type="Date" ViewType="Normal"></Item>
+
+</Root>

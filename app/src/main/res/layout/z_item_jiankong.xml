@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color22"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/itempengRL"
+        android:layout_width="match_parent"
+        android:layout_height="173dp"
+        android:layout_marginLeft="@dimen/bianju"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="@dimen/bianju"
+        android:background="@drawable/ldy_cornersitemclickstyle">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@mipmap/timg" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="南京夫子庙工地"
+                android:textColor="@color/color2"
+                android:textSize="@dimen/textsize13" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/jiankong_kongzhi_itemLL"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/kongzhi" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/jiankong_jiance_itemLL"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/baojing" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/setuserheadimgsheetclose"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/paizhaoTxt"
+            android:background="@color/transparent"
+            android:orientation="vertical"></LinearLayout>
+
+        <TextView
+            android:id="@+id/paizhaoTxt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_above="@+id/setuserheadimgline"
+            android:background="@drawable/textviewclickstyle"
+            android:gravity="center"
+            android:text="拍照"
+            android:textColor="@color/color12"
+            android:textSize="15dp" />
+
+        <View
+            android:id="@+id/setuserheadimgline"
+            style="@style/LineStyle"
+            android:layout_above="@+id/fromxiangceTxt"></View>
+
+        <TextView
+            android:id="@+id/fromxiangceTxt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_above="@+id/setuserheadimgyinying"
+            android:background="@drawable/textviewclickstyle"
+            android:gravity="center"
+            android:text="从相册选取"
+            android:textColor="@color/color12"
+            android:textSize="15dp" />
+
+        <View
+            android:id="@id/setuserheadimgyinying"
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:layout_above="@+id/setuserheadimgcancel"
+            android:background="@color/color10" />
+
+        <TextView
+            android:id="@+id/setuserheadimgcancel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/textviewclickstyle"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/color12"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+</LinearLayout>

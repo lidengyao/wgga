@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLL">
+    <!--头部-->
+    <RelativeLayout style="@style/TopBarStyle">
+
+        <LinearLayout
+            style="@style/TopBarLeftStyle"
+            android:visibility="visible">
+
+            <ImageView style="@style/TopBarBackImageStyle" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/XmTitleTV"
+            style="@style/TopBarTitleStyle"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="" />
+        <RelativeLayout
+            style="@style/TopBarRightStyle"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/tianjia" />
+
+            <TextView
+                style="@style/TopBarRightTextStyle"
+                android:text="修改"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/HavDataRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/DaiChuLiLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color22"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bianju"
+                android:layout_marginTop="20dp"
+                android:text="项目名称： "
+                android:textColor="@color/color25"
+                android:textSize="@dimen/textsize15" />
+
+
+            <TextView
+                android:id="@+id/DaiChuLiSiteNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bianju"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/bianju"
+                android:lineSpacingExtra="5sp"
+                android:textColor="@color/color13"
+                android:textSize="@dimen/textsize14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bianju"
+                android:layout_marginTop="20dp"
+                android:text="设备名称： "
+                android:textColor="@color/color25"
+                android:textSize="@dimen/textsize15" />
+
+
+            <TextView
+                android:id="@+id/DaiChuLiDeviceNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bianju"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/bianju"
+                android:lineSpacingExtra="5sp"
+                android:textColor="@color/color13"
+                android:textSize="@dimen/textsize14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bianju"
+                android:layout_marginTop="20dp"
+                android:text="报警描述： "
+                android:textColor="@color/color25"
+                android:textSize="@dimen/textsize15" />
+
+
+            <TextView
+                android:id="@+id/DaiChuLiContentTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bianju"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/bianju"
+                android:lineSpacingExtra="5sp"
+                android:textColor="@color/color13"
+                android:textSize="@dimen/textsize14" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bianju"
+                android:layout_marginTop="20dp"
+                android:text="报警时间： "
+                android:textColor="@color/color25"
+                android:textSize="@dimen/textsize15" />
+
+
+            <TextView
+                android:id="@+id/DaiChuLiXiaDaBaoJingTimeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bianju"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/bianju"
+                android:lineSpacingExtra="5sp"
+                android:textColor="@color/color13"
+                android:textSize="@dimen/textsize14" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bianju"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="是否已处理："
+                    android:textColor="@color/color25"
+                    android:textSize="@dimen/textsize15" />
+
+                <RelativeLayout
+                    android:id="@+id/DaiChuLiXiangMuRL"
+                    android:layout_width="163dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/ldy_cornersitemclickstyle"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/DaiChuLiXiangMuNextIV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/xiala" />
+
+                    <TextView
+                        android:id="@+id/DaiChuLiXiangMuTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_toLeftOf="@+id/DaiChuLiXiangMuNextIV"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:text="否" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/YiChuLiLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color22"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bianju"
+                android:layout_marginTop="20dp"
+                android:text="项目名称： "
+                android:textColor="@color/color25"
+                android:textSize="@dimen/textsize15" />
+
+
+            <TextView
+                android:id="@+id/YiChuLiSiteNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bianju"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/bianju"
+                android:lineSpacingExtra="5sp"
+                android:textColor="@color/color13"
+                android:textSize="@dimen/textsize14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bianju"
+                android:layout_marginTop="20dp"
+                android:text="设备名称： "
+                android:textColor="@color/color25"
+                android:textSize="@dimen/textsize15" />
+
+
+            <TextView
+                android:id="@+id/YiChuLiDeviceNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bianju"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/bianju"
+                android:lineSpacingExtra="5sp"
+                android:textColor="@color/color13"
+                android:textSize="@dimen/textsize14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bianju"
+                android:layout_marginTop="20dp"
+                android:text="报警描述： "
+                android:textColor="@color/color25"
+                android:textSize="@dimen/textsize15" />
+
+
+            <TextView
+                android:id="@+id/ContentTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bianju"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/bianju"
+                android:lineSpacingExtra="5sp"
+                android:textColor="@color/color13"
+                android:textSize="@dimen/textsize14" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bianju"
+                android:layout_marginTop="20dp"
+                android:text="报警时间： "
+                android:textColor="@color/color25"
+                android:textSize="@dimen/textsize15" />
+
+
+            <TextView
+                android:id="@+id/YiChuLiXiaDaBaoJingTimeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bianju"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/bianju"
+                android:lineSpacingExtra="5sp"
+                android:textColor="@color/color13"
+                android:textSize="@dimen/textsize14" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bianju"
+                android:layout_marginTop="20dp"
+                android:text="处理时间： "
+                android:textColor="@color/color25"
+                android:textSize="@dimen/textsize15" />
+
+
+            <TextView
+                android:id="@+id/YiChuLiBaoJingTimeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bianju"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/bianju"
+                android:lineSpacingExtra="5sp"
+                android:textColor="@color/color13"
+                android:textSize="@dimen/textsize14" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bianju"
+                android:layout_marginTop="20dp"
+                android:text="当前状态： "
+                android:textColor="@color/color25"
+                android:textSize="@dimen/textsize15" />
+
+
+            <TextView
+                android:id="@+id/YiChuLiStatusTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bianju"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/bianju"
+                android:lineSpacingExtra="5sp"
+                android:textColor="@color/color13"
+                android:textSize="@dimen/textsize14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/BtnOK"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="75dp"
+                android:background="@drawable/sysbtn_shape"
+                android:text="提交"
+                android:textColor="@color/color2"
+                android:textSize="@dimen/textsize20" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/NoDataLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂无报警数据" />
+    </LinearLayout>
+</LinearLayout>

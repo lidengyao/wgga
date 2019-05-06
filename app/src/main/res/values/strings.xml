@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">智慧危管</string>
+    <string name="alert_net_error">网络异常,请重试。</string>
+    <string name="alert_no_mobile">请输入正确的手机号</string>
+    <string name="alert_null_mobile">请输入手机号</string>
+    <string name="alert_null_password">请输入密码</string>
+    <string name="label_login">登录</string>
+    <string name="label_register">注册</string>
+    <string name="label_mobile_validate">输入手机号码登录</string>
+    <string name="label_use_mobile_login">登录</string>
+    <string name="hint_input_mobile">请输入你的手机号</string>
+    <string name="hint_input_password">请输入密码</string>
+    <string name="hint_input_verification_code">请输入短信验证码</string>
+    <string name="load_more_text">正在加载</string>
+
+    <string name="load_more">加载中</string>
+    <string name="loaded_empty"></string>
+    <string name="loaded_no_more">全部数据加载完毕</string>
+    <string name="load_more_click_to_load_more">点击加载更多</string>
+    <string name="load_more_error">加载失败,点击重试</string>
+    <string name="message_permission_rationale">允许以下权限以便程序继续执行：\n\n%1$s</string>
+    <string name="title_dialog">提示</string>
+    <string name="resume">继续</string>
+    <string name="chongzhi">重置</string>
+    <string name="queding">确定</string>
+</resources>

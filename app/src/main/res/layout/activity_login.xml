@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/status_shape"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="标题"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/ll_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginTop="@dimen/view_margin"
+            android:layout_marginRight="@dimen/view_margin"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/label_mobile_validate"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/text_size_small" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:padding="@dimen/layout_margin">
+
+            <EditText
+                android:id="@+id/et_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_shape"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_input_mobile"
+                android:inputType="number"
+                android:paddingLeft="@dimen/type_margin"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint_dark"
+                android:textSize="@dimen/text_size_small" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="@dimen/view_margin"
+            android:padding="@dimen/layout_margin">
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/touch_view_min_height"
+                android:background="@drawable/edit_text_shape"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_input_password"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/type_margin"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint_dark"
+                android:textSize="@dimen/text_size_small" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/touch_view_min_height"
+        android:layout_below="@id/ll_login"
+        android:layout_margin="@dimen/view_margin"
+        android:background="@color/color5"
+        android:text="@string/label_use_mobile_login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_medium" />
+
+    <TextView
+        android:id="@+id/tv_forget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginTop="@dimen/view_margin"
+        android:gravity="center"
+        android:text="忘记密码?"
+        android:textColor="@color/hint_dark"
+        android:textSize="@dimen/text_size_small" />
+</LinearLayout>

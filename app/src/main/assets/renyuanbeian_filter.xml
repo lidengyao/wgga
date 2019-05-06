@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+    <Item Hint="请输入姓名" IsNull="Yes" Key="name" Title="姓名" ViewType="Normal"></Item>
+    <Item Hint="请输入证件号码" IsNull="Yes" Key="certificateNumber" Title="证件号码" ViewType="Normal"></Item>
+    <Item Hint="请输入所属单位" IsNull="Yes" Key="suoshudanwei" Title="所属单位" ViewType="Normal"></Item>
+    <Item Hint="请输入行政区域" IsNull="Yes" Key="xingzhengquyu" Title="行政区域" ViewType="Normal"></Item>
+    <Item Hint="请选择岗位类型" IsNull="Yes" Key="dutyType" Title="岗位类型" TypeKey="3"
+        ViewType="ArrayList"></Item>
+    <Item BeginDateKey="BeginDateKey" EndDateKey="EndDateKey" Hint="请输入行政区域" IsNull="Yes"
+        Key="xingzhengquyu" Title="出生日期" ViewType="BetweenDate"></Item>
+    <Item Hint="请选择备案状态" IsNull="Yes" Key="dutyType" Title="备案状态" TypeKey="5"
+        ViewType="ArrayList"></Item>
+    <Item Hint="请选择注销状态" IsNull="Yes" Key="dutyType" Title="注销状态" TypeKey="6"
+        ViewType="ArrayList"></Item>
+    <Item BeginDateKey="BeginDateKey" EndDateKey="EndDateKey" Hint="请输入行政区域" IsNull="Yes"
+        Key="xingzhengquyu" Title="修改日期" ViewType="BetweenDate"></Item>
+    <Item Hint="请选择民族" IsNull="Yes" Key="raceType" Title="民族" TypeKey="2"
+        ViewType="ArrayList"></Item>
+    <Item Hint="请输入手机号码" IsNull="Yes" Key="tel" Title="手机号码" ViewType="Normal"></Item>
+    <Item Hint="" IsNull="Yes" Key="raceType" Title="五类人员库对比" TypeKey="7"
+        ViewType="ArrayList"></Item>
+    <Item Hint="" IsNull="Yes" Key="raceType" Title="直管单位" TypeKey="8"
+        ViewType="ArrayList"></Item>
+
+
+</Root>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"><shape>
+
+        <!-- 渐变效果 -->
+        <gradient android:centerColor="#ECECEC" android:endColor="#ECECEC" android:startColor="#ECECEC"></gradient>
+        <!-- 描边、边框 -->
+        <stroke android:width="0dp" android:color="#ECECEC"></stroke>
+        <!-- 圆角 -->
+        <corners android:radius="0dp"></corners>
+        <!-- 间隔 -->
+    </shape></item>
+    <item android:state_pressed="false"><shape>
+        <gradient android:centerColor="#ffffff" android:endColor="#ffffff" android:startColor="#ffffff"></gradient>
+        <!-- 描边、边框 -->
+        <stroke android:width="0dp" android:color="#ffffff"></stroke>
+
+        <corners android:radius="0dp"></corners>
+    </shape></item>
+
+</selector>

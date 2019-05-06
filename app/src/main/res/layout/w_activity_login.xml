@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/MainLL"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/loginbg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/SysNameIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/guohui" />
+
+            <TextView
+                android:id="@+id/SysNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="连云港智慧危管-公安"
+                android:textColor="@color/color2"
+                android:textSize="@dimen/textsize19" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp">
+
+
+                <ImageView
+                    android:layout_width="302dp"
+                    android:layout_height="269dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@mipmap/logindown" />
+
+                <LinearLayout
+                    android:layout_width="302dp"
+                    android:layout_height="269dp"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/logintop"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/logintxt"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="42dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/loginuser" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:id="@+id/userET"
+                                android:layout_width="195dp"
+                                android:layout_height="match_parent"
+                                android:background="@null"
+                                android:ellipsize="end"
+                                android:paddingLeft="5dp"
+                                android:singleLine="true"
+                                android:text="zejun" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@mipmap/logintxt"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="42dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/loginpwd" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:id="@+id/PwdET"
+                                android:layout_width="195dp"
+                                android:layout_height="match_parent"
+                                android:background="@null"
+                                android:ellipsize="end"
+                                android:inputType="textPassword"
+                                android:paddingLeft="5dp"
+                                android:singleLine="true"
+                                android:text="123456" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/BtnLogin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/loginbtn"
+                            android:text="登录"
+                            android:textColor="@color/color2"
+                            android:textSize="@dimen/textsize16" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp">
+
+                <TextView
+                    android:id="@+id/forgetPwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="50dp"
+                    android:padding="5dp"
+                    android:text="忘记密码"
+                    android:textColor="@color/color2"
+                    android:textSize="@dimen/textsize14" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

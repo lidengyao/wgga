@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+    <Item ViewType="Two" leftKey="name" leftTitle="姓名" rightTitle="身份证号"
+        rightkey="certificateNumber"></Item>
+    <Item Key="companyId" Title="所在单位" ViewType="One"></Item>
+    <Item ViewType="Two" leftKey="cultural" leftTitle="文化程度" rightTitle="性别"
+        rightkey="gender"></Item>
+    <Item ViewType="Two" leftKey="raceType" leftTitle="民族" rightTitle="手机" rightkey="tel"></Item>
+    <Item Key="nowDuty" Title="岗位" ViewType="One"></Item>
+    <Item ViewType="Two" leftKey="createTime" leftTitle="申请日期" rightTitle="修改日期"
+        rightkey="updateTime"></Item>
+    <Item Key="status" Title="状态" ViewType="One"></Item>
+</Root>

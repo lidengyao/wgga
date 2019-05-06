@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+    <Item Hint="请输入姓名" IsNull="No" Key="name" Title="姓名" ViewType="Normal"></Item>
+</Root>
